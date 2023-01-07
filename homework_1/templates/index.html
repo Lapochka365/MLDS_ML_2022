@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Узнать стоимость машины</title>
+        <link rel='stylesheet' type='text/css' href='../static/style.css'>
+        <meta charset='utf-8'/>
+    </head>
+    <body>
+        <h1>Узнать стоимость автомобиля</h1>
+        <p>
+            Чтобы узнать стоимость автомобиля/автомобилей, необходимо указать данные:<br>
+            <ul>
+                <li>Введите данные об автомобиле в формате <b>JSON</b><br></li>
+                <li>Загрузите данные сразу о нескольких автомобилях в формате <b>CSV</b></li>
+            </ul>
+        </p>
+        <form action='/predict_item_raw' method='post', enctype='multipart/form-data'>
+            Поле для формата <b>JSON</b>:<br>
+            <textarea type='text' name='raw_sample' placeholder='Данные об автомобиле в формате JSON' aria-label='default input example' cols=40 rows=8></textarea>
+            <br>
+            <button type='sumbit'>Загрузить <b>JSON</b></button>
+        </form>
+        <br>
+        <form action='/predict_items' method='post' enctype='multipart/form-data'>
+            Выбор <b>CSV</b>-файла:<br>
+            <input type='file' name='csv_file'>
+            <br>
+            <button type='submit'>Загрузить <b>CSV</b></button>
+        </form>
+
+    </body>
+</html>

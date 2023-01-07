@@ -1,0 +1,25 @@
+h1 {
+    font-weight: bold;
+    font-size: 200%;
+    text-shadow: 3px 3px 1px black;
+}
+p {
+    text-shadow: 1px 1px 0.5px black;
+    font-size: 120%;
+}
+ul, ol {
+    font-size: 120%;
+    text-shadow: 1px 1px 0.5px black;
+}
+li {
+    margin: 10px 0;
+}
+body {
+    color: #cdcdcd;
+    background: #343434;
+    text-align: center;
+    list-style-position: inside;
+}
+form {
+    font-size: 120%;
+}
